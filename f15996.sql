@@ -27,7 +27,7 @@ prompt APPLICATION 15996 - ARL_NL
 -- Application Export:
 --   Application:     15996
 --   Name:            ARL_NL
---   Date and Time:   10:44 Monday April 27, 2015
+--   Date and Time:   18:43 Monday April 27, 2015
 --   Exported By:     MILAN.KODALI@GMAIL.COM
 --   Flashback:       0
 --   Export Type:     Application Export
@@ -36,10 +36,10 @@ prompt APPLICATION 15996 - ARL_NL
 --
 
 -- Application Statistics:
---   Pages:                     14
---     Items:                   24
+--   Pages:                     15
+--     Items:                   25
 --     Processes:               22
---     Regions:                 30
+--     Regions:                 33
 --     Buttons:                 32
 --     Dynamic Actions:         17
 --   Shared Components:
@@ -107,8 +107,8 @@ wwv_flow_api.create_flow(
 ,p_rejoin_existing_sessions=>'N'
 ,p_csv_encoding=>'Y'
 ,p_ui_detection_css_urls=>'#APP_IMAGES#arl.css'
-,p_last_updated_by=>'MILAN.KODALI@GMAIL.COM'
-,p_last_upd_yyyymmddhh24miss=>'20150427101223'
+,p_last_updated_by=>'APEX_PUBLIC_USER'
+,p_last_upd_yyyymmddhh24miss=>'20150427183438'
 ,p_file_prefix => nvl(wwv_flow_application_install.get_static_app_file_prefix,'')
 ,p_files_version=>14
 ,p_ui_type_name => null
@@ -130,6 +130,15 @@ wwv_flow_api.create_list_item(
 ,p_list_item_icon=>'fa-home'
 ,p_list_item_current_type=>'COLON_DELIMITED_PAGE_LIST'
 ,p_list_item_current_for_pages=>'1'
+);
+wwv_flow_api.create_list_item(
+ p_id=>wwv_flow_api.id(3634268920621241479)
+,p_list_item_display_sequence=>15
+,p_list_item_link_text=>'Login'
+,p_list_item_link_target=>'f?p=&APP_ID.:24:&SESSION.::&DEBUG.::::'
+,p_list_item_icon=>'fa-laptop'
+,p_list_item_current_type=>'COLON_DELIMITED_PAGE_LIST'
+,p_list_item_current_for_pages=>'24'
 );
 wwv_flow_api.create_list_item(
  p_id=>wwv_flow_api.id(3500389649372057330)
@@ -7516,7 +7525,7 @@ wwv_flow_api.create_shortcut(
 ,p_shortcut_name=>'SC_LAB'
 ,p_shortcut_type=>'HTML_TEXT'
 ,p_error_text=>'Error'
-,p_shortcut=>'<a href="https://apex.oracle.com/pls/apex/f?p=15996:23:&APP_SESSION.:::::">Lab</a>'
+,p_shortcut=>'<a href="https://apex.oracle.com/pls/apex/f?p=15996:23:&APP_SESSION.:::::">View Lab Employee Distribution</a>'
 );
 end;
 /
@@ -7581,7 +7590,7 @@ wwv_flow_api.create_page(
 ,p_cache_mode=>'NOCACHE'
 ,p_help_text=>'No help is available for this page.'
 ,p_last_updated_by=>'MILAN.KODALI@GMAIL.COM'
-,p_last_upd_yyyymmddhh24miss=>'20150427075429'
+,p_last_upd_yyyymmddhh24miss=>'20150427164929'
 );
 wwv_flow_api.create_page_plug(
  p_id=>wwv_flow_api.id(3500251580739010305)
@@ -7689,8 +7698,8 @@ wwv_flow_api.create_page(
 ,p_page_is_public_y_n=>'N'
 ,p_cache_mode=>'NOCACHE'
 ,p_help_text=>'No help is available for this page.'
-,p_last_updated_by=>'MILAN.KODALI@GMAIL.COM'
-,p_last_upd_yyyymmddhh24miss=>'20150427101223'
+,p_last_updated_by=>'APEX_PUBLIC_USER'
+,p_last_upd_yyyymmddhh24miss=>'20150427183438'
 );
 wwv_flow_api.create_page_plug(
  p_id=>wwv_flow_api.id(3500390339527057341)
@@ -7818,6 +7827,8 @@ wwv_flow_api.create_worksheet_rpt(
 ,p_is_default=>'Y'
 ,p_display_rows=>50
 ,p_report_columns=>'NAME:STATUS:DIVISION_CODE:STATUS_EFFECTIVE_DATE:EMP_LAB:EMP_ADMIN:ARL_PROV_EMPS_USER_ID:'
+,p_sort_column_1=>'NAME'
+,p_sort_direction_1=>'ASC'
 ,p_flashback_enabled=>'N'
 );
 wwv_flow_api.create_page_plug(
@@ -7946,7 +7957,7 @@ wwv_flow_api.create_worksheet_rpt(
 ,p_status=>'PUBLIC'
 ,p_is_default=>'Y'
 ,p_display_rows=>50
-,p_report_columns=>'MEMBER_ID:NAME:STATUS:DIVISION_CODE:STATUS_EFFECTIVE_DATE:EMP_LAB:EMP_ADMIN:ARL_PROV_EMPS_USER_ID'
+,p_report_columns=>'NAME:STATUS:DIVISION_CODE:STATUS_EFFECTIVE_DATE:EMP_LAB:EMP_ADMIN:ARL_PROV_EMPS_USER_ID:'
 ,p_flashback_enabled=>'N'
 );
 wwv_flow_api.create_page_plug(
@@ -8128,8 +8139,10 @@ wwv_flow_api.create_page_button(
 ,p_button_template_id=>wwv_flow_api.id(3500235283334009950)
 ,p_button_image_alt=>'Create'
 ,p_button_position=>'RIGHT_OF_IR_SEARCH_BAR'
-,p_button_redirect_url=>'f?p=&APP_ID.:3:&SESSION.::&DEBUG.:3'
+,p_button_redirect_url=>'f?p=&APP_ID.:3:&SESSION.::&DEBUG.:3::'
 ,p_grid_new_grid=>false
+,p_grid_new_row=>'N'
+,p_grid_new_column=>'N'
 );
 wwv_flow_api.create_page_button(
  p_id=>wwv_flow_api.id(3548697234165077458)
@@ -8613,8 +8626,8 @@ wwv_flow_api.create_page(
 ,p_page_is_public_y_n=>'N'
 ,p_cache_mode=>'NOCACHE'
 ,p_help_text=>'No help is available for this page.'
-,p_last_updated_by=>'APEX_PUBLIC_USER'
-,p_last_upd_yyyymmddhh24miss=>'20150427101105'
+,p_last_updated_by=>'MILAN.KODALI@GMAIL.COM'
+,p_last_upd_yyyymmddhh24miss=>'20150427183244'
 );
 wwv_flow_api.create_page_plug(
  p_id=>wwv_flow_api.id(3501364182767343580)
@@ -8637,6 +8650,8 @@ wwv_flow_api.create_page_plug(
 ''))
 ,p_plug_source_type=>'NATIVE_IR'
 ,p_plug_query_row_template=>1
+,p_plug_display_condition_type=>'EXISTS'
+,p_plug_display_when_condition=>'SELECT * FROM ARLNL_MEMBER WHERE EMP_ADMIN = ''Y'' AND member_id =  :"P24_USER"'
 );
 wwv_flow_api.create_worksheet(
  p_id=>wwv_flow_api.id(3501364432156343581)
@@ -8755,6 +8770,8 @@ wwv_flow_api.create_page_plug(
 ''))
 ,p_plug_source_type=>'NATIVE_IR'
 ,p_plug_query_row_template=>1
+,p_plug_display_condition_type=>'EXISTS'
+,p_plug_display_when_condition=>'SELECT * FROM ARLNL_MEMBER WHERE EMP_ADMIN = ''Y'' AND member_id =  :"P24_USER"'
 );
 wwv_flow_api.create_worksheet(
  p_id=>wwv_flow_api.id(3549511263849192664)
@@ -8872,6 +8889,8 @@ wwv_flow_api.create_page_plug(
 ''))
 ,p_plug_source_type=>'NATIVE_IR'
 ,p_plug_query_row_template=>1
+,p_plug_display_condition_type=>'EXISTS'
+,p_plug_display_when_condition=>'SELECT * FROM ARLNL_MEMBER WHERE EMP_ADMIN = ''Y'' AND member_id =  :"P24_USER"'
 );
 wwv_flow_api.create_worksheet(
  p_id=>wwv_flow_api.id(3549515969812193890)
@@ -8978,6 +8997,24 @@ wwv_flow_api.create_page_plug(
 ,p_plug_query_row_template=>1
 ,p_attribute_01=>'STANDARD'
 ,p_attribute_02=>'N'
+,p_attribute_03=>'Y'
+);
+wwv_flow_api.create_page_plug(
+ p_id=>wwv_flow_api.id(3642507724189847406)
+,p_plug_name=>'Admin'
+,p_region_template_options=>'#DEFAULT#:t-Region--scrollBody'
+,p_escape_on_http_output=>'Y'
+,p_plug_template=>wwv_flow_api.id(3500214328820007025)
+,p_plug_display_sequence=>40
+,p_include_in_reg_disp_sel_yn=>'N'
+,p_plug_display_point=>'BODY'
+,p_plug_source=>'You must be logged in as an administrator to manage lists.'
+,p_plug_query_row_template=>1
+,p_plug_query_num_rows=>15
+,p_plug_display_condition_type=>'EXISTS'
+,p_plug_display_when_condition=>'SELECT * FROM ARLNL_MEMBER WHERE EMP_ADMIN = ''N'' AND member_id =  :"P24_USER"'
+,p_attribute_01=>'N'
+,p_attribute_02=>'TEXT'
 ,p_attribute_03=>'Y'
 );
 wwv_flow_api.create_page_button(
@@ -9424,7 +9461,6 @@ wwv_flow_api.create_page(
 ,p_name=>'Labs'
 ,p_page_mode=>'NORMAL'
 ,p_step_title=>'Labs'
-,p_html_page_onload=>'&"SC_LAB".'
 ,p_step_sub_title_type=>'TEXT_WITH_SUBSTITUTIONS'
 ,p_first_item=>'NO_FIRST_ITEM'
 ,p_page_template_options=>'#DEFAULT#'
@@ -9434,8 +9470,8 @@ wwv_flow_api.create_page(
 ,p_cache_mode=>'NOCACHE'
 ,p_cache_timeout_seconds=>21600
 ,p_help_text=>'No help is available for this page.'
-,p_last_updated_by=>'APEX_PUBLIC_USER'
-,p_last_upd_yyyymmddhh24miss=>'20150427101039'
+,p_last_updated_by=>'MILAN.KODALI@GMAIL.COM'
+,p_last_upd_yyyymmddhh24miss=>'20150427160839'
 );
 wwv_flow_api.create_page_plug(
  p_id=>wwv_flow_api.id(3501662320192414998)
@@ -9499,6 +9535,22 @@ wwv_flow_api.create_worksheet_rpt(
 ,p_display_rows=>50
 ,p_report_columns=>'LAB_CODE:'
 ,p_flashback_enabled=>'N'
+);
+wwv_flow_api.create_page_plug(
+ p_id=>wwv_flow_api.id(3629179886055016965)
+,p_plug_name=>'Shortcuts'
+,p_region_template_options=>'#DEFAULT#:t-Region--scrollBody'
+,p_escape_on_http_output=>'Y'
+,p_plug_template=>wwv_flow_api.id(3500214328820007025)
+,p_plug_display_sequence=>20
+,p_include_in_reg_disp_sel_yn=>'N'
+,p_plug_display_point=>'BODY'
+,p_plug_query_row_template=>1
+,p_plug_query_num_rows=>15
+,p_plug_header=>'"SC_LAB"'
+,p_attribute_01=>'N'
+,p_attribute_02=>'HTML'
+,p_attribute_03=>'Y'
 );
 wwv_flow_api.create_page_button(
  p_id=>wwv_flow_api.id(3501664508723415002)
@@ -10925,11 +10977,11 @@ wwv_flow_api.create_page(
 ,p_cache_mode=>'NOCACHE'
 ,p_help_text=>'No help is available for this page.'
 ,p_last_updated_by=>'MILAN.KODALI@GMAIL.COM'
-,p_last_upd_yyyymmddhh24miss=>'20150427091647'
+,p_last_upd_yyyymmddhh24miss=>'20150427161249'
 );
 wwv_flow_api.create_page_plug(
  p_id=>wwv_flow_api.id(3569976213229385502)
-,p_plug_name=>'Lab_Employee_Distribution'
+,p_plug_name=>'Lab Employee Distribution'
 ,p_region_template_options=>'#DEFAULT#:t-Region--scrollBody'
 ,p_plug_template=>wwv_flow_api.id(3500214328820007025)
 ,p_plug_display_sequence=>10
@@ -10985,6 +11037,67 @@ wwv_flow_api.create_flash_chart5_series(
 ,p_series_query_no_data_found=>'no data found'
 ,p_series_query_row_count_max=>15
 ,p_show_action_link=>'N'
+);
+end;
+/
+prompt --application/pages/page_00024
+begin
+wwv_flow_api.create_page(
+ p_id=>24
+,p_user_interface_id=>wwv_flow_api.id(3500250747867010274)
+,p_name=>'Login'
+,p_page_mode=>'NORMAL'
+,p_step_title=>'Login'
+,p_step_sub_title_type=>'TEXT_WITH_SUBSTITUTIONS'
+,p_first_item=>'NO_FIRST_ITEM'
+,p_page_template_options=>'#DEFAULT#'
+,p_dialog_chained=>'Y'
+,p_overwrite_navigation_list=>'N'
+,p_page_is_public_y_n=>'N'
+,p_cache_mode=>'NOCACHE'
+,p_help_text=>'No help is available for this page.'
+,p_last_updated_by=>'MILAN.KODALI@GMAIL.COM'
+,p_last_upd_yyyymmddhh24miss=>'20150427165011'
+);
+wwv_flow_api.create_page_plug(
+ p_id=>wwv_flow_api.id(3634544750031261573)
+,p_plug_name=>'Select User'
+,p_region_template_options=>'#DEFAULT#:t-Region--scrollBody'
+,p_escape_on_http_output=>'Y'
+,p_plug_template=>wwv_flow_api.id(3500214328820007025)
+,p_plug_display_sequence=>10
+,p_include_in_reg_disp_sel_yn=>'N'
+,p_plug_display_point=>'BODY'
+,p_plug_query_row_template=>1
+,p_plug_query_num_rows=>15
+,p_attribute_01=>'N'
+,p_attribute_02=>'HTML'
+,p_attribute_03=>'Y'
+);
+wwv_flow_api.create_page_item(
+ p_id=>wwv_flow_api.id(3634545032807261575)
+,p_name=>'P24_USER'
+,p_item_sequence=>20
+,p_item_plug_id=>wwv_flow_api.id(3634544750031261573)
+,p_prompt=>'Select User'
+,p_display_as=>'NATIVE_SELECT_LIST'
+,p_named_lov=>'MEMBERS'
+,p_lov=>wwv_flow_utilities.join(wwv_flow_t_varchar2(
+'select name as d,',
+'       member_id as r',
+'  from ARLNL_Member',
+'where status = ''active'''))
+,p_lov_display_null=>'YES'
+,p_cSize=>30
+,p_cMaxlength=>4000
+,p_cHeight=>1
+,p_label_alignment=>'RIGHT'
+,p_field_alignment=>'LEFT-CENTER'
+,p_field_template=>wwv_flow_api.id(3500234775502009457)
+,p_item_template_options=>'#DEFAULT#'
+,p_lov_display_extra=>'YES'
+,p_attribute_01=>'SUBMIT'
+,p_attribute_03=>'Y'
 );
 end;
 /
