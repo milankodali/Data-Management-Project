@@ -1,0 +1,6 @@
+drop view arl_membership;
+
+create view arl_membership as
+SELECT p.name as List, c.name as Member
+FROM ARLNL_Membership m join ARLNL_Member p on m.parent_id = p.member_id join ARLNL_Member c on m.child_id = c.member_id
+

@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B983B091-2383-9CC0-CF1C-A9BE138A7012" name="ARLNL_Division">
+<createdBy>milankodali</createdBy>
+<createdTime>2015-04-25 23:45:04 UTC</createdTime>
+<generatorID>4DCAE476-0531-A17C-DE3C-55E42EF34E15</generatorID>
+<ownerDesignName>final logical model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="division_id" id="BADD53A0-6042-6B25-BB52-3E6777DFF7EC">
+<createdBy>milankodali</createdBy>
+<createdTime>2015-04-25 23:45:04 UTC</createdTime>
+<generatorID>FE46F60B-ADE1-1545-4A16-50402F0FE228</generatorID>
+<ownerDesignName>final logical model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="division_code" id="E07E842B-34C3-1600-EC74-78D4486428A0">
+<createdBy>milankodali</createdBy>
+<createdTime>2015-04-25 23:45:04 UTC</createdTime>
+<generatorID>46D0786A-8123-E47D-27FB-3A41162D8679</generatorID>
+<ownerDesignName>final logical model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7F0A1998-87A7-9E2C-373E-199FE36E5A43" name="ARLNL_Division_PK">
+<createdBy>milankodali</createdBy>
+<createdTime>2015-04-25 23:45:04 UTC</createdTime>
+<generatorID>77D41168-305B-A254-C141-1E2705F989BD</generatorID>
+<ownerDesignName>final logical model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BADD53A0-6042-6B25-BB52-3E6777DFF7EC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

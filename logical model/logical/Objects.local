@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.logical.LogicalDesign>
+   <object objectType="Entity" objectID="4DCAE476-0531-A17C-DE3C-55E42EF34E15" name="ARLNL_Division" seqName="seg_0"/>
+   <object objectType="Entity" objectID="8D10FBF0-097E-AC7A-38F1-EE3CA7749B9D" name="ARLNL_Document" seqName="seg_0"/>
+   <object objectType="Entity" objectID="99ABE44B-972B-453B-8329-5119993AE1DD" name="ARLNL_Member" seqName="seg_0"/>
+   <object objectType="Entity" objectID="73DE6DEB-72F4-8B1D-D855-67B2D54D0836" name="ARLNL_Membership" seqName="seg_0"/>
+   <object objectType="Entity" objectID="9E76A776-DC82-7BC3-1604-096B60F6FF49" name="ARLNL_lab" seqName="seg_0"/>
+   <object objectType="Entity" objectID="8741E3B9-B2FD-B440-8E19-09ED3BEBF691" name="ARL_Prov_Emps" seqName="seg_0"/>
+   <object objectType="Relation" objectID="FB5E3635-0421-945E-B468-2DD5E396F1F6" name="r1" seqName="seg_0"/>
+   <object objectType="Relation" objectID="3FA22C0D-E4F7-67AD-F2BE-1194B9AACC6B" name="r2" seqName="seg_0"/>
+   <object objectType="Relation" objectID="68DE751C-8C99-B76E-2D5A-574A660EBD44" name="r3" seqName="seg_0"/>
+   <object objectType="Relation" objectID="B3BEE809-DBE0-D2B7-0CD8-9D7156869F50" name="r4" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.logical.LogicalDesign>

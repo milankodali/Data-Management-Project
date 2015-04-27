@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2FDC4C3C-BDAF-F716-0375-5D19F9501863" name="ARLNL_Membership">
+<createdBy>milankodali</createdBy>
+<createdTime>2015-04-25 23:45:04 UTC</createdTime>
+<generatorID>73DE6DEB-72F4-8B1D-D855-67B2D54D0836</generatorID>
+<ownerDesignName>final logical model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="membership_id" id="67FA1884-F14D-3256-CF71-4E693F88E20F">
+<createdBy>milankodali</createdBy>
+<createdTime>2015-04-25 23:45:04 UTC</createdTime>
+<generatorID>0DBBE5F1-2C67-5A8D-0446-BB8D87C03218</generatorID>
+<ownerDesignName>final logical model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="parent_id" id="3B222024-0139-4E97-CA09-436CB0AD96EE">
+<createdBy>milankodali</createdBy>
+<createdTime>2015-04-25 23:45:04 UTC</createdTime>
+<generatorID>456108DF-2B5C-9D9B-C665-42FCEDA3EF30</generatorID>
+<ownerDesignName>final logical model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>CEA807AC-CD11-91C6-5684-E75E05383736</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="10B1977E-96F4-DC17-C1B2-C8ACA9496D98" referredColumn="CEA807AC-CD11-91C6-5684-E75E05383736"/>
+</associations>
+</Column>
+<Column name="child_id" id="72A8C460-AA94-0311-5490-551F3BC95A04">
+<createdBy>milankodali</createdBy>
+<createdTime>2015-04-25 23:45:04 UTC</createdTime>
+<generatorID>00AEC759-9E74-A8EB-C374-896765C325D1</generatorID>
+<ownerDesignName>final logical model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>CEA807AC-CD11-91C6-5684-E75E05383736</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="85317E7C-26E9-3C96-027D-A7CDB5DAB485" referredColumn="CEA807AC-CD11-91C6-5684-E75E05383736"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="996B503A-DCC9-8151-0349-86B2A15D50BE" name="ARLNL_Membership_PK">
+<createdBy>milankodali</createdBy>
+<createdTime>2015-04-25 23:45:04 UTC</createdTime>
+<generatorID>17ABA767-BC4F-004C-C8CB-B20ADDE8E2C4</generatorID>
+<ownerDesignName>final logical model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="67FA1884-F14D-3256-CF71-4E693F88E20F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C882147A-BA39-B7BC-665B-3A0B31B52D1E" name="Member_FK">
+<createdBy>milankodali</createdBy>
+<createdTime>2015-04-25 23:45:04 UTC</createdTime>
+<generatorID>68DE751C-8C99-B76E-2D5A-574A660EBD44</generatorID>
+<ownerDesignName>final logical model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3B222024-0139-4E97-CA09-436CB0AD96EE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FE159EEC-684E-7888-BE2D-C45D6965A534" name="Member_FKv1">
+<createdBy>milankodali</createdBy>
+<createdTime>2015-04-25 23:45:04 UTC</createdTime>
+<generatorID>B3BEE809-DBE0-D2B7-0CD8-9D7156869F50</generatorID>
+<ownerDesignName>final logical model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="72A8C460-AA94-0311-5490-551F3BC95A04"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

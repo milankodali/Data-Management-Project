@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9E76A776-DC82-7BC3-1604-096B60F6FF49" name="ARLNL_lab">
+<createdBy>milankodali</createdBy>
+<createdTime>2015-04-25 23:35:17 UTC</createdTime>
+<ownerDesignName>final logical model</ownerDesignName>
+<engineerTo>
+<item key="9A4733BE-D1F3-EDA4-ADCA-303EDE426E1C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="lab_id" id="EFD682FB-94E4-E79A-686C-DD1EE685F4E7">
+<createdBy>milankodali</createdBy>
+<createdTime>2015-04-25 23:35:31 UTC</createdTime>
+<ownerDesignName>final logical model</ownerDesignName>
+<engineerTo>
+<item key="9A4733BE-D1F3-EDA4-ADCA-303EDE426E1C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="lab_code" id="89523979-00BD-F4FC-9CE5-18C3089E8320">
+<createdBy>milankodali</createdBy>
+<createdTime>2015-04-25 23:35:43 UTC</createdTime>
+<ownerDesignName>final logical model</ownerDesignName>
+<engineerTo>
+<item key="9A4733BE-D1F3-EDA4-ADCA-303EDE426E1C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="913EC4F1-A62E-F03A-D86D-9CBC5548664D" name="{entity} PK">
+<createdBy>milankodali</createdBy>
+<createdTime>2015-04-25 23:35:38 UTC</createdTime>
+<ownerDesignName>final logical model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="9A4733BE-D1F3-EDA4-ADCA-303EDE426E1C" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>EFD682FB-94E4-E79A-686C-DD1EE685F4E7</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

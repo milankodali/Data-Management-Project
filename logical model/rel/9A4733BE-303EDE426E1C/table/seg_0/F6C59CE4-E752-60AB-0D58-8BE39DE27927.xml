@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F6C59CE4-E752-60AB-0D58-8BE39DE27927" name="ARL_Prov_Emps">
+<createdBy>milankodali</createdBy>
+<createdTime>2015-04-25 23:45:04 UTC</createdTime>
+<generatorID>8741E3B9-B2FD-B440-8E19-09ED3BEBF691</generatorID>
+<ownerDesignName>final logical model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="user_id" id="F04D6BB1-DA79-FBB3-21D5-D9FD02466B83">
+<createdBy>milankodali</createdBy>
+<createdTime>2015-04-25 23:45:04 UTC</createdTime>
+<generatorID>D1571C30-3771-4C38-330C-DC6DB9A42E1D</generatorID>
+<ownerDesignName>final logical model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ARLNL_Member_member_id" id="EFC5349A-95FA-F906-097F-682E31CD867B">
+<createdBy>milankodali</createdBy>
+<createdTime>2015-04-25 23:45:04 UTC</createdTime>
+<generatorID>01BF519E-F8A4-313E-783F-F6C468A90097</generatorID>
+<ownerDesignName>final logical model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>CEA807AC-CD11-91C6-5684-E75E05383736</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="48D1115E-2B97-257C-CCB3-3769B400959D" referredColumn="CEA807AC-CD11-91C6-5684-E75E05383736"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="240B1CCE-35DA-DEB3-058D-71C40863D77E" name="ARLNL_Prov_Emps_PK">
+<createdBy>milankodali</createdBy>
+<createdTime>2015-04-25 23:45:04 UTC</createdTime>
+<generatorID>3FCE9BE1-BDB1-F95D-D520-71F809EC4FD0</generatorID>
+<ownerDesignName>final logical model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F04D6BB1-DA79-FBB3-21D5-D9FD02466B83"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="54BE8E2B-2CA0-2B59-FA55-6A07E0CB69E6" name="ARLNL_Provided_Employees__IDX">
+<createdBy>milankodali</createdBy>
+<createdTime>2015-04-25 23:45:04 UTC</createdTime>
+<ownerDesignName>final logical model</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>3FA22C0D-E4F7-67AD-F2BE-1194B9AACC6B</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="EFC5349A-95FA-F906-097F-682E31CD867B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1F5C13F3-5B76-FE94-2EAE-47EADD8546D9" name="ARL_Prov_Emps_ARLNL_Member_FK">
+<createdBy>milankodali</createdBy>
+<createdTime>2015-04-25 23:49:24 UTC</createdTime>
+<generatorID>3FA22C0D-E4F7-67AD-F2BE-1194B9AACC6B</generatorID>
+<ownerDesignName>final logical model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EFC5349A-95FA-F906-097F-682E31CD867B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,112 @@
+DROP SEQUENCE ARLNL_Division_seq ; 
+create sequence ARLNL_Division_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER ARLNL_Division_PK_trig 
+; 
+
+create or replace trigger ARLNL_Division_PK_trig 
+before insert on ARLNL_Division
+for each row 
+begin 
+select ARLNL_Division_seq.nextval into :new.division_id from dual; 
+end; 
+/
+
+DROP SEQUENCE ARLNL_Document_seq ; 
+create sequence ARLNL_Document_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER ARLNL_Document_PK_trig 
+; 
+
+create or replace trigger ARLNL_Document_PK_trig 
+before insert on ARLNL_Document
+for each row 
+begin 
+select ARLNL_Document_seq.nextval into :new.document_id from dual; 
+end; 
+/
+
+DROP SEQUENCE ARLNL_Member_seq ; 
+create sequence ARLNL_Member_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER ARLNL_Member_PK_trig 
+; 
+
+create or replace trigger ARLNL_Member_PK_trig 
+before insert on ARLNL_Member
+for each row 
+begin 
+select ARLNL_Member_seq.nextval into :new.member_id from dual; 
+end; 
+/
+
+DROP SEQUENCE ARLNL_Membership_seq ; 
+create sequence ARLNL_Membership_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER ARLNL_Membership_PK_trig 
+; 
+
+create or replace trigger ARLNL_Membership_PK_trig 
+before insert on ARLNL_Membership
+for each row 
+begin 
+select ARLNL_Membership_seq.nextval into :new.membership_id from dual; 
+end; 
+/
+
+DROP SEQUENCE ARLNL_lab_seq ; 
+create sequence ARLNL_lab_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER ARLNL_lab_PK_trig 
+; 
+
+create or replace trigger ARLNL_lab_PK_trig 
+before insert on ARLNL_lab
+for each row 
+begin 
+select ARLNL_lab_seq.nextval into :new.lab_id from dual; 
+end; 
+/
+
+DROP SEQUENCE ARL_Prov_Emps_seq ; 
+create sequence ARL_Prov_Emps_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER ARL_Prov_Emps_PK_trig 
+; 
+
+create or replace trigger ARL_Prov_Emps_PK_trig 
+before insert on ARL_Prov_Emps
+for each row 
+begin 
+select ARL_Prov_Emps_seq.nextval into :new.user_id from dual; 
+end; 
+/
+
+DROP INDEX ARLNL_Member_member_id_FK_0 ;
+CREATE INDEX ARLNL_Member_member_id_FK_0 ON ARLNL_Document(ARLNL_Member_member_id) ;
+DROP INDEX ARL_Prov_Emps_user_id_FK_1 ;
+CREATE INDEX ARL_Prov_Emps_user_id_FK_1 ON ARLNL_Member(ARL_Prov_Emps_user_id) ;
+DROP INDEX ARLNL_Member_member_id_FK_2 ;
+CREATE INDEX ARLNL_Member_member_id_FK_2 ON ARL_Prov_Emps(ARLNL_Member_member_id) ;
+DROP INDEX parent_id_FK_3 ;
+CREATE INDEX parent_id_FK_3 ON ARLNL_Membership(parent_id) ;
+DROP INDEX child_id_FK_4 ;
+CREATE INDEX child_id_FK_4 ON ARLNL_Membership(child_id) ;

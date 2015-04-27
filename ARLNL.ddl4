@@ -1,0 +1,62 @@
+drop view arl_emp ;
+drop view arl_list ;
+
+create view arl_emp as
+SELECT member_id, name, status, division_code, status_effective_date, EMP_lab, EMP_admin, ARL_Prov_Emps_user_id
+FROM ARLNL_Member
+WHERE type = 'emp';
+
+create or replace TRIGGER emp_trigger
+	INSTEAD OF insert ON arl_emp
+	FOR EACH ROW
+BEGIN
+	insert into ARLNL_Member (
+		member_id,
+		type,
+		name,
+		status,
+		division_code,
+		status_effective_date,
+		EMP_lab,
+		EMP_admin)
+	VALUES (
+		:new.member_id,
+		'emp',
+		:new.name,
+		:new.status,
+		:new.division_code,
+		:new.status_effective_date,
+		:new.EMP_lab,
+		:new.EMP_admin) ;
+END;
+/
+
+create view arl_list as
+SELECT member_id, name, status, division_code, status_effective_date, NL_description, NL_external_name
+FROM ARLNL_Member
+WHERE type = 'list';
+
+create or replace TRIGGER list_trigger
+	INSTEAD OF insert ON arl_list
+	FOR EACH ROW
+BEGIN
+	insert into ARLNL_Member (
+		member_id,
+		type,
+		name,
+		status,
+		division_code,
+		status_effective_date,
+		NL_description,
+		NL_external_name)
+	VALUES (
+		:new.member_id,
+		'list',
+		:new.name,
+		:new.status,
+		:new.division_code,
+		:new.status_effective_date,
+		:new.NL_description,
+		:new.NL_external_name) ;
+END;
+/

@@ -1,0 +1,180 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="26206049-B4D7-5AE0-E9B5-7E30F41C6436" name="ARLNL_Member">
+<createdBy>milankodali</createdBy>
+<createdTime>2015-04-25 23:45:04 UTC</createdTime>
+<generatorID>99ABE44B-972B-453B-8329-5119993AE1DD</generatorID>
+<ownerDesignName>final logical model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="member_id" id="CEA807AC-CD11-91C6-5684-E75E05383736">
+<createdBy>milankodali</createdBy>
+<createdTime>2015-04-25 23:45:04 UTC</createdTime>
+<generatorID>1FC3F5C9-2090-E857-475F-8DA9AFC72F4C</generatorID>
+<ownerDesignName>final logical model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="type" id="52224100-1B91-356B-FF0A-52BF58F76BC5">
+<createdBy>milankodali</createdBy>
+<createdTime>2015-04-25 23:45:04 UTC</createdTime>
+<generatorID>160ED4EA-731A-866F-28FA-4E608936CDF9</generatorID>
+<ownerDesignName>final logical model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="5AE28852-668A-C26B-C243-A996AB7BA8CD">
+<createdBy>milankodali</createdBy>
+<createdTime>2015-04-25 23:45:04 UTC</createdTime>
+<generatorID>C21F803E-A518-2C9C-1D74-0CE38A2C2D50</generatorID>
+<ownerDesignName>final logical model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status" id="3A9E05B2-07BA-8DCA-ABEA-A33EBAC8FB34">
+<createdBy>milankodali</createdBy>
+<createdTime>2015-04-25 23:45:04 UTC</createdTime>
+<generatorID>EC3D2857-549A-D77B-CBE8-FD7274A2A9CF</generatorID>
+<ownerDesignName>final logical model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="division_code" id="E0A0DE1E-07A3-1CA8-AFED-D3DADE3518FD">
+<createdBy>milankodali</createdBy>
+<createdTime>2015-04-25 23:45:04 UTC</createdTime>
+<generatorID>8466CCBB-7AE2-473B-A281-9322C89ACE50</generatorID>
+<ownerDesignName>final logical model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status_effective_date" id="CDD36F5A-524D-43E4-6BBE-81641E820BE4">
+<createdBy>milankodali</createdBy>
+<createdTime>2015-04-25 23:45:04 UTC</createdTime>
+<generatorID>32499EE8-510A-88AB-E390-3BC21AABFB60</generatorID>
+<ownerDesignName>final logical model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NL_description" id="8CEAB6D1-E0AD-84F8-6018-478D93944A53">
+<createdBy>milankodali</createdBy>
+<createdTime>2015-04-25 23:45:04 UTC</createdTime>
+<generatorID>B9C02526-B41C-10D3-C4EB-3065D105AAA1</generatorID>
+<ownerDesignName>final logical model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NL_external_name" id="B7B08475-CCFF-9D3F-7768-654C39E563F5">
+<createdBy>milankodali</createdBy>
+<createdTime>2015-04-25 23:45:04 UTC</createdTime>
+<generatorID>57C00F1E-5F62-D114-0509-E043EC9CDFAF</generatorID>
+<ownerDesignName>final logical model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMP_lab" id="A8B11D83-9A0F-2AED-2E70-D9276DC6F6DA">
+<createdBy>milankodali</createdBy>
+<createdTime>2015-04-25 23:45:04 UTC</createdTime>
+<generatorID>B8C004F4-93B8-6DB0-918B-0F6E55BD6014</generatorID>
+<ownerDesignName>final logical model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMP_admin" id="9C84E4E3-0E43-7B40-EA96-A5DE118AF0B5">
+<createdBy>milankodali</createdBy>
+<createdTime>2015-04-25 23:45:04 UTC</createdTime>
+<generatorID>3237983E-EEBB-CB45-2464-88988E29C731</generatorID>
+<ownerDesignName>final logical model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ARL_Prov_Emps_user_id" id="FD19FCBC-5D40-847D-87DB-14A4B227FB0D">
+<createdBy>milankodali</createdBy>
+<createdTime>2015-04-25 23:45:04 UTC</createdTime>
+<generatorID>F3413949-49DA-AB25-0601-989404B866FD</generatorID>
+<ownerDesignName>final logical model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>F04D6BB1-DA79-FBB3-21D5-D9FD02466B83</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="068F31D3-094F-CE82-39C8-9535EE7409C4" referredColumn="F04D6BB1-DA79-FBB3-21D5-D9FD02466B83"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7C54A230-3822-FF17-20EA-3FAEC8C02B65" name="ARLNL_Member_PK">
+<createdBy>milankodali</createdBy>
+<createdTime>2015-04-25 23:45:04 UTC</createdTime>
+<generatorID>02434034-E414-C7B1-48AF-5E94071B5B9B</generatorID>
+<ownerDesignName>final logical model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CEA807AC-CD11-91C6-5684-E75E05383736"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="981F3B9F-3FF4-2AD2-0775-0ABE37ABA4B4" name="ARLNL_Member__IDX">
+<createdBy>milankodali</createdBy>
+<createdTime>2015-04-25 23:45:04 UTC</createdTime>
+<ownerDesignName>final logical model</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>3FA22C0D-E4F7-67AD-F2BE-1194B9AACC6B</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="FD19FCBC-5D40-847D-87DB-14A4B227FB0D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B047F9BE-D881-FA57-5F6E-0ABD38752AB1" name="ARLNL_Member_ARL_Prov_Emps_FK">
+<createdBy>milankodali</createdBy>
+<createdTime>2015-04-25 23:49:24 UTC</createdTime>
+<generatorID>3FA22C0D-E4F7-67AD-F2BE-1194B9AACC6B</generatorID>
+<ownerDesignName>final logical model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FD19FCBC-5D40-847D-87DB-14A4B227FB0D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
